@@ -1,0 +1,22 @@
+[
+  {"name": "Sedia", "found": false},
+  {"name": "Tavolo", "found": false},
+  {"name": "Tazza", "found": false},
+  {"name": "Libro", "found": false},
+  {"name": "Penna", "found": false},
+  {"name": "Computer portatile", "found": false},
+  {"name": "Telefono", "found": false},
+  {"name": "Chiavi", "found": false},
+  {"name": "Orologio", "found": false},
+  {"name": "Occhiali", "found": false},
+  {"name": "Scarpa", "found": false},
+  {"name": "Lampada", "found": false},
+  {"name": "Cuscino", "found": false},
+  {"name": "Forchetta", "found": false},
+  {"name": "Coltello", "found": false},
+  {"name": "Piatto", "found": false},
+  {"name": "Bicchiere", "found": false},
+  {"name": "Bottiglia", "found": false},
+  {"name": "Telecomando", "found": false},
+  {"name": "Spazzola", "found": false}
+]

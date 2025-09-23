@@ -1,0 +1,19 @@
+{
+  "name": "ai-world-news",
+  "version": "1.0.0",
+  "description": "A simple web app to display AI news.",
+  "main": "index.html",
+  "scripts": {
+    "start": "http-server ."
+  },
+  "keywords": [
+    "ai",
+    "news",
+    "webapp"
+  ],
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "http-server": "^14.1.1"
+  }
+}

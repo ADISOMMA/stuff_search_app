@@ -1,0 +1,32 @@
+{
+  "permissions": {
+    "allow": [
+      "Bash(mkdir \"AI World News\")",
+      "Bash(touch index.html styles.css script.js articles.json)",
+      "WebSearch",
+      "Bash(npm install http-server --save-dev)",
+      "Bash(mkdir \"Stuff Search\")",
+      "Bash(flutter create stuff_search)",
+      "Bash(flutter --version)",
+      "Bash(touch articles.json)",
+      "Bash(flutter pub get)",
+      "Bash(flutter devices)",
+      "Bash(adb kill-server)",
+      "Bash(adb start-server)",
+      "Bash(flutter run -d emulator-5554)",
+      "Bash(flutter clean)",
+      "Bash(flutter run -d emulator-5554 -v)",
+      "Bash(flutter run -d emulator-5-554 -v)",
+      "Bash(C:UsersAlexdAppDataLocalAndroidsdkplatform-toolsadb.exe kill-server)",
+      "Bash(C:UsersAlexdAppDataLocalAndroidsdkplatform-toolsadb.exe start-server)",
+      "Bash(taskkill /F /IM dart.exe /T)",
+      "Bash(git -C stuff_search init -b main)",
+      "Bash(git -C stuff_search remote add origin https://github.com/ADISOMMA/stuff_search_app.git)",
+      "Bash(git -C stuff_search add .)",
+      "Bash(git -C stuff_search commit -m \"Initial commit\")",
+      "Bash(git -C stuff_search push -u origin main)"
+    ],
+    "deny": [],
+    "ask": []
+  }
+}

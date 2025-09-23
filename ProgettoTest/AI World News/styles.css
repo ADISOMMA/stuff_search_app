@@ -1,0 +1,104 @@
+/* --- Variabili CSS per Theming e Coerenza --- */
+:root {
+    --primary-bg-color: #121212;
+    --secondary-bg-color: #1e1e1e;
+    --primary-text-color: #e0e0e0;
+    --accent-color: #03a9f4; /* Un blu tech moderno */
+    --border-color: #333;
+    --font-family: 'Roboto', sans-serif;
+    --container-width: 90%;
+    --max-container-width: 1200px;
+    --border-radius: 8px;
+    --transition-speed: 0.3s;
+}
+
+/* --- Reset di Base e Stile del Body --- */
+*,
+*::before,
+*::after {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: var(--font-family);
+    background-color: var(--primary-bg-color);
+    color: var(--primary-text-color);
+    line-height: 1.6;
+}
+
+/* --- Stile Header --- */
+header {
+    text-align: center;
+    padding: 2rem 1rem;
+    background-color: var(--secondary-bg-color);
+    border-bottom: 1px solid var(--border-color);
+    margin-bottom: 2rem;
+}
+
+header h1 {
+    font-size: clamp(2rem, 5vw, 2.5rem); /* Dimensione del font fluida */
+    font-weight: 700;
+    color: var(--accent-color);
+    letter-spacing: 1px;
+}
+
+/* --- Contenitore Principale degli Articoli --- */
+#articles-container {
+    display: grid;
+    /* Crea colonne reattive che sono almeno 320px ma si espandono per riempire lo spazio */
+    grid-template-columns: repeat(auto-fill, minmax(320px, 1fr));
+    gap: 1.5rem;
+    width: var(--container-width);
+    max-width: var(--max-container-width);
+    margin: 0 auto;
+}
+
+/* --- Stile del Singolo Articolo --- */
+.article {
+    background-color: var(--secondary-bg-color);
+    border-radius: var(--border-radius);
+    overflow: hidden;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
+    cursor: pointer;
+    transition: transform var(--transition-speed) ease, box-shadow var(--transition-speed) ease;
+}
+
+.article:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.4);
+}
+
+.article-image {
+    width: 100%;
+    height: 200px;
+    object-fit: cover; /* Assicura che l'immagine copra lo spazio senza distorsioni */
+    display: block;
+}
+
+.article-title {
+    font-size: 1.25rem;
+    font-weight: 700;
+    padding: 1rem 1.25rem;
+    margin: 0;
+}
+
+.article-content {
+    max-height: 0;
+    overflow: hidden;
+    padding: 0 1.25rem;
+    transition: max-height var(--transition-speed) ease-out, padding var(--transition-speed) ease-out;
+}
+
+.article-content p {
+    margin-bottom: 1rem;
+}
+
+/* --- Stato Espanso per l'Articolo --- */
+.article.expanded .article-content {
+    /* Un valore abbastanza grande da contenere il testo */
+    max-height: 600px; 
+    padding: 0 1.25rem 1rem 1.25rem;
+    transition: max-height var(--transition-speed) ease-in, padding var(--transition-speed) ease-in;
+}
