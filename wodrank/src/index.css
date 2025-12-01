@@ -1,3 +1,29 @@
-@tailwind base;
+﻿@tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+/* Theme overrides */
+:root {
+  color-scheme: dark;
+}
+
+.theme-light {
+  color-scheme: light;
+}
+
+.theme-light body { background-color: #f7fafc; color: #0f172a; }
+.theme-light .bg-slate-900, .theme-light .bg-slate-900\/95 { background-color: #f8fafc !important; color: #0f172a; }
+.theme-light .bg-slate-800 { background-color: #eef2ff !important; color: #0f172a; }
+.theme-light .bg-slate-700 { background-color: #e2e8f0 !important; }
+.theme-light .border-slate-800, .theme-light .border-slate-700 { border-color: #cbd5e1 !important; }
+.theme-light .text-slate-100, .theme-light .text-slate-200 { color: #0f172a !important; }
+.theme-light .text-slate-300 { color: #1e293b !important; }
+.theme-light .text-slate-400 { color: #1e293b !important; }
+.theme-light .text-slate-500 { color: #334155 !important; }
+.theme-light .font-bold { color: #0f172a !important; }
+.theme-light .text-white { color: #0f172a !important; }
+
+/* Benchmark icon tint */
+.benchmark-icon { filter: invert(63%) sepia(41%) saturate(629%) hue-rotate(107deg) brightness(92%) contrast(93%); }
+.theme-light .benchmark-icon { filter: none; }
+/* keep slate dark as default without overrides */
